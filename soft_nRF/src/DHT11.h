@@ -1,0 +1,20 @@
+#ifndef DHT11_H
+#define DHT11_H
+
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/gpio.h>
+#include <zephyr/logging/log.h>
+#include <stdint.h>
+
+#define DHT_PORT                        DT_NODELABEL(gpio0)
+#define DHT_PIN                         4
+#define MEASURE_DHT11_PERIOD_MS         10000
+extern int DHT11_corrected_temperature;
+
+//Functions
+int dht11_init(void);
+int dht11_read(uint8_t data[5]);
+void dht11_work_handler(struct k_work *work);
+
+#endif

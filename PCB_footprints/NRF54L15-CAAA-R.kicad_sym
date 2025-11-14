@@ -1,0 +1,437 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "NRF54L15-CAAA-R" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at -35.56 44.45 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "NRF54L15-CAAA-R" (id 1) (at -35.56 -41.91 0)
+      (effects (font (size 1.27 1.27)) (justify top left))
+    )
+    (property "Footprint" "NRF54L15-CAAA-R:BGA47N30P7X7_245X224X46N" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Nordic Semiconductors" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "0.463 mm" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "CREATOR" "AAMIR" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/NRF54L15-CAAA-R/Nordic+Power/view-part/?ref=eda" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "IPC-7351B" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "0.10" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "VERIFIER" "RODRIGO" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/NRF54L15-CAAA-R/Nordic+Power/view-part/?ref=snap" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "NRF54L15-CAAA-R" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            RF System on a Chip - SoC Ultra-low power Bluetooth Multiprotocol 5.4 SoC System-on-Chip\n                        \n" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 16) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "NORDIC POWER" (id 17) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "NRF54L15-CAAA-R_0_0"
+      (rectangle (start -35.56 -40.64) (end 35.56 43.18)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin power_in line (at 40.64 38.1 180.0) (length 5.08)
+        (name "DCC"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 35.56 180.0) (length 5.08)
+        (name "DECA"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 33.02 180.0) (length 5.08)
+        (name "DECD"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 30.48 180.0) (length 5.08)
+        (name "DECRF"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 40.64 180.0) (length 5.08)
+        (name "VDD"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 40.64 180.0) (length 5.08)
+        (name "VDD"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at -40.64 25.4 0) (length 5.08)
+        (name "~{RESET}"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input clock (at -40.64 22.86 0) (length 5.08)
+        (name "SWDCLK"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input clock (at -40.64 15.24 0) (length 5.08)
+        (name "XC1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input clock (at -40.64 12.7 0) (length 5.08)
+        (name "XC2"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 7.62 0) (length 5.08)
+        (name "P0.00"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 5.08 0) (length 5.08)
+        (name "P0.01"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 2.54 0) (length 5.08)
+        (name "P0.02"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 0.0 0) (length 5.08)
+        (name "P0.03"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -2.54 0) (length 5.08)
+        (name "P0.04/GRTCLFCLKOUT"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -7.62 0) (length 5.08)
+        (name "P1.00/XL1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -10.16 0) (length 5.08)
+        (name "P1.01/XL2"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -12.7 0) (length 5.08)
+        (name "P1.02/NFC1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -15.24 0) (length 5.08)
+        (name "P1.03/NFC2"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -17.78 0) (length 5.08)
+        (name "P1.04/ASO(0)/AIN0"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -20.32 0) (length 5.08)
+        (name "P1.05/ASI(0)/RADIO(6)/AIN1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -22.86 0) (length 5.08)
+        (name "P1.06/ASO(1)/AIN2"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -25.4 0) (length 5.08)
+        (name "P1.07/ASI(1)/AIN3"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 -27.94 0) (length 5.08)
+        (name "P1.08/CLK16M/EXTREF"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 20.32 180.0) (length 5.08)
+        (name "P1.09/ASO(2)/RADIO(0)"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 17.78 180.0) (length 5.08)
+        (name "P1.10/ASI(2)/RADIO(1)"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin output line (at 40.64 25.4 180.0) (length 5.08)
+        (name "ANT"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 15.24 180.0) (length 5.08)
+        (name "P1.11/ASO(3)/RADIO(2)/AIN4"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 12.7 180.0) (length 5.08)
+        (name "P1.12/ASI(3)/RADIO(3)/AIN5"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 10.16 180.0) (length 5.08)
+        (name "P1.13/RADIO(4)/AIN6"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 7.62 180.0) (length 5.08)
+        (name "P1.14/RADIO(5)/AIN7"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 0.0 180.0) (length 5.08)
+        (name "P2.00"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -2.54 180.0) (length 5.08)
+        (name "P2.01"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -5.08 180.0) (length 5.08)
+        (name "P2.02"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -7.62 180.0) (length 5.08)
+        (name "P2.03"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -10.16 180.0) (length 5.08)
+        (name "P2.04"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -12.7 180.0) (length 5.08)
+        (name "P2.05"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -15.24 180.0) (length 5.08)
+        (name "P2.06/TRACECLK"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -17.78 180.0) (length 5.08)
+        (name "P2.07/TRACEDATA(0)/SWO"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "E4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -20.32 180.0) (length 5.08)
+        (name "P2.08/TRACEDATA(1)"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "D4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -22.86 180.0) (length 5.08)
+        (name "P2.09/TRACEDATA(2)"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 -25.4 180.0) (length 5.08)
+        (name "P2.10/TRACEDATA(3)"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -40.64 20.32 0) (length 5.08)
+        (name "SWDIO"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "F2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 -35.56 180.0) (length 5.08)
+        (name "VSS"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 -35.56 180.0) (length 5.08)
+        (name "VSS"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "G4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 40.64 -38.1 180.0) (length 5.08)
+        (name "VSS_PA"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 40.64 5.08 180.0) (length 5.08)
+        (name "P1.15"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
