@@ -6,4 +6,4 @@ project(DHT11)
 target_sources(app PRIVATE 
         src/main.c
         src/DHT11.c
-        src/fan_control.c)
+        src/bluetooth.c)

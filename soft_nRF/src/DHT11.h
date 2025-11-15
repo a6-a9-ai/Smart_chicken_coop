@@ -10,10 +10,13 @@
 #define DHT_PORT                        DT_NODELABEL(gpio0)
 #define DHT_PIN                         4
 #define MEASURE_DHT11_PERIOD_MS         10000
-extern int DHT11_corrected_temperature;
+
+#define FAN_THRESHOLD_TEMP              22
+#define PWM_PERIOD_USEC                 40
 
 //Functions
 int dht11_init(void);
+int fan_control_init(void);
 int dht11_read(uint8_t data[5]);
 void dht11_work_handler(struct k_work *work);
 

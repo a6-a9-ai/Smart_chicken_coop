@@ -1,5 +1,5 @@
 #include "DHT11.h"
-#include "fan_control.h"
+#include "bluetooth.h"
 
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>

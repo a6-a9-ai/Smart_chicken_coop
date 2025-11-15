@@ -1,9 +1,47 @@
 #include "DHT11.h"
+#include "bluetooth.h"
+
+#include <zephyr/sys/util.h>
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/pwm.h>
+#include <zephyr/logging/log.h>
+#include <stdint.h>
 
 LOG_MODULE_REGISTER(dht11, LOG_LEVEL_INF);
 
+#define FAN_PWM_NODE                DT_ALIAS(pwm_led0)
+static const struct pwm_dt_spec fan_pwm = PWM_DT_SPEC_GET(FAN_PWM_NODE);
+
 static const struct device *dht_gpio = NULL;
 int DHT11_corrected_temperature = 20;
+uint32_t duty_cycle;
+bool previous_fan_pwm = true;
+
+extern struct k_work_q sensor_wq;
+extern struct k_work_q critical_workqueue;
+
+static void fan_control_work_handler(struct k_work *work);
+K_WORK_DEFINE(fan_control_work, fan_control_work_handler);
+
+static void fan_control_work_handler(struct k_work *work){
+    ARG_UNUSED(work);
+    int ret = pwm_set_dt(&fan_pwm, PWM_USEC(PWM_PERIOD_USEC), PWM_USEC(duty_cycle));
+    if (ret < 0) {
+        LOG_ERR("pwm_set_dt() failed: %d", ret);
+    } else {
+        LOG_INF("Fan PWM updated: %s", duty_cycle ? "ON (100%)" : "OFF (0%)");
+    }
+}
+
+int fan_control_init(void){
+    if (!device_is_ready(fan_pwm.dev)) {
+        LOG_ERR("PWM device not ready");
+        return -1;
+    }
+    LOG_INF("Fan PWM initialized");
+    return 0;
+}
 
 int dht11_init(void){
     dht_gpio = DEVICE_DT_GET(DHT_PORT);
@@ -20,6 +58,7 @@ int dht11_read(uint8_t data[5]){
     uint32_t start;
     for (i = 0; i < 5; i++)
         data[i] = 0;
+
     gpio_pin_configure(dht_gpio, DHT_PIN, GPIO_OUTPUT);
     gpio_pin_set(dht_gpio, DHT_PIN, 0);
     k_msleep(20);
@@ -47,23 +86,33 @@ int dht11_read(uint8_t data[5]){
     }
     if (((data[0] + data[1] + data[2] + data[3]) & 0xFF) != data[4])
         return -2;
+
     return 0;
 }
 
 // DHT11 work handler
 void dht11_work_handler(struct k_work *work){
-    ARG_UNUSED(work);
     uint8_t buf[5];
     int ret = dht11_read(buf);
-
-    extern struct k_work_q sensor_wq;
     extern struct k_work_delayable dht11_periodic_work;
 
     if (ret == 0) {
         int humidity = buf[0];
         int temperature = buf[2];
         DHT11_corrected_temperature = temperature - 3;
-        LOG_INF("Humidity: %d %% | Temp: %d °C", humidity, temperature);
+        LOG_INF("Humidity: %d %% | Temp: %d °C", humidity, DHT11_corrected_temperature);
+
+        if (DHT11_corrected_temperature > FAN_THRESHOLD_TEMP && !previous_fan_pwm){
+            duty_cycle = PWM_PERIOD_USEC;
+            k_work_submit_to_queue(&critical_workqueue, &fan_control_work);
+            ble_alerte_temp_trigger();                          // Lancer alerte BLE via critical_workqueue
+            previous_fan_pwm = true;
+
+        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP && previous_fan_pwm) {
+            duty_cycle = 0;
+            k_work_submit_to_queue(&critical_workqueue, &fan_control_work);
+            previous_fan_pwm = false;
+        }
     } else {
         LOG_WRN("Failed to read DHT11 (err %d)", ret);
     }
