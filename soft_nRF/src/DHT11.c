@@ -19,9 +19,8 @@ uint32_t duty_cycle;
 bool previous_fan_pwm = true;
 
 extern struct k_work_q sensor_wq;
-extern struct k_work_q critical_workqueue;
+extern struct k_work_q critical_wq;
 
-static void fan_control_work_handler(struct k_work *work);
 K_WORK_DEFINE(fan_control_work, fan_control_work_handler);
 
 static void fan_control_work_handler(struct k_work *work){
@@ -91,7 +90,7 @@ int dht11_read(uint8_t data[5]){
 }
 
 // DHT11 work handler
-void dht11_work_handler(struct k_work *work){
+void dht11_periodic_work_handler(struct k_work *work){
     uint8_t buf[5];
     int ret = dht11_read(buf);
     extern struct k_work_delayable dht11_periodic_work;
@@ -103,14 +102,14 @@ void dht11_work_handler(struct k_work *work){
         LOG_INF("Humidity: %d %% | Temp: %d °C", humidity, DHT11_corrected_temperature);
 
         if (DHT11_corrected_temperature > FAN_THRESHOLD_TEMP && !previous_fan_pwm){
+            ble_alerte_temp_trigger();                          // Lancer alerte BLE via critical_wq
             duty_cycle = PWM_PERIOD_USEC;
-            k_work_submit_to_queue(&critical_workqueue, &fan_control_work);
-            ble_alerte_temp_trigger();                          // Lancer alerte BLE via critical_workqueue
+            k_work_submit_to_queue(&critical_wq, &fan_control_work);
             previous_fan_pwm = true;
 
         } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP && previous_fan_pwm) {
             duty_cycle = 0;
-            k_work_submit_to_queue(&critical_workqueue, &fan_control_work);
+            k_work_submit_to_queue(&critical_wq, &fan_control_work);
             previous_fan_pwm = false;
         }
     } else {

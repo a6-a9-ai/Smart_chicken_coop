@@ -18,6 +18,7 @@
 int dht11_init(void);
 int fan_control_init(void);
 int dht11_read(uint8_t data[5]);
-void dht11_work_handler(struct k_work *work);
+void dht11_periodic_work_handler(struct k_work *work);
+static void fan_control_work_handler(struct k_work *work);
 
 #endif
