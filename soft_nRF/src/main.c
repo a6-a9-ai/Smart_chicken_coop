@@ -22,9 +22,11 @@ struct k_work_q critical_wq;
 K_WORK_DELAYABLE_DEFINE(dht11_periodic_work, dht11_periodic_work_handler);
 
 int main(void){
+    if (bluetooth_init() < 0){
+        LOG_ERR("Bluetooth init failed");
+    }
     if (dht11_init() < 0){
         LOG_ERR("DHT11 init failed!");
-        return -1;
     }
     // Workqueues initialisation
     k_work_queue_start(&sensor_wq, sensor_stack_area,
@@ -38,7 +40,7 @@ int main(void){
     if (fan_control_init() < 0){
         LOG_ERR("Fan control init failed!");
     }
-    // ! Exemples of scheduling and submition of tasks in critical_wq and sensor_wq
+
     k_work_schedule_for_queue(&sensor_wq, &dht11_periodic_work, K_SECONDS(3)); // Scheduling dht11_periodic_work in 3 seconds
 
     while(1){

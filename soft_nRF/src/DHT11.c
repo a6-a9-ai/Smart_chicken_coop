@@ -1,13 +1,6 @@
 #include "DHT11.h"
 #include "bluetooth.h"
 
-#include <zephyr/sys/util.h>
-#include <zephyr/kernel.h>
-#include <zephyr/device.h>
-#include <zephyr/drivers/pwm.h>
-#include <zephyr/logging/log.h>
-#include <stdint.h>
-
 LOG_MODULE_REGISTER(dht11, LOG_LEVEL_INF);
 
 #define FAN_PWM_NODE                DT_ALIAS(pwm_led0)
@@ -23,8 +16,7 @@ extern struct k_work_q critical_wq;
 
 K_WORK_DEFINE(fan_control_work, fan_control_work_handler);
 
-static void fan_control_work_handler(struct k_work *work){
-    ARG_UNUSED(work);
+void fan_control_work_handler(struct k_work *work){
     int ret = pwm_set_dt(&fan_pwm, PWM_USEC(PWM_PERIOD_USEC), PWM_USEC(duty_cycle));
     if (ret < 0) {
         LOG_ERR("pwm_set_dt() failed: %d", ret);
