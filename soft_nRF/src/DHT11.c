@@ -90,19 +90,28 @@ void dht11_periodic_work_handler(struct k_work *work){
     if (ret == 0) {
         int humidity = buf[0];
         int temperature = buf[2];
-        DHT11_corrected_temperature = temperature - 3;
+        DHT11_corrected_temperature = temperature - 1;
         LOG_INF("Humidity: %d %% | Temp: %d °C", humidity, DHT11_corrected_temperature);
 
-        if (DHT11_corrected_temperature > FAN_THRESHOLD_TEMP && !previous_fan_pwm){
-            ble_alerte_temp_trigger();                          // Lancer alerte BLE via critical_wq
+        if (DHT11_corrected_temperature > FAN_THRESHOLD_TEMP_SUP && !previous_fan_pwm){
+            ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 1);                          // Lancer alerte BLE via critical_wq
             duty_cycle = PWM_PERIOD_USEC;
             k_work_submit_to_queue(&critical_wq, &fan_control_work);
             previous_fan_pwm = true;
 
-        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP && previous_fan_pwm) {
+        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP_SUP && DHT11_corrected_temperature > FAN_THRESHOLD_TEMP_INF && previous_fan_pwm) {
+            ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 0);
             duty_cycle = 0;
             k_work_submit_to_queue(&critical_wq, &fan_control_work);
             previous_fan_pwm = false;
+
+        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP_INF) {
+            ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 1);
+            if (previous_fan_pwm){
+                duty_cycle = 0;
+                k_work_submit_to_queue(&critical_wq, &fan_control_work);
+                previous_fan_pwm = false;
+            }
         }
     } else {
         LOG_WRN("Failed to read DHT11 (err %d)", ret);

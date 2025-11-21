@@ -13,8 +13,13 @@
 #define DHT_PIN                         4
 #define MEASURE_DHT11_PERIOD_MS         5000
 
-#define FAN_THRESHOLD_TEMP              20
+#define FAN_THRESHOLD_TEMP_SUP          20
+#define FAN_THRESHOLD_TEMP_INF          -5
 #define PWM_PERIOD_USEC                 40
+
+#define BLE_PAQUET_TEMP_BIT             0
+#define BLE_PAQUET_GAS_BIT              1
+#define BLE_PAQUET_ATTACK_BIT           2
 
 //Functions
 int dht11_init(void);

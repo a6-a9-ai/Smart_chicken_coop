@@ -8,11 +8,11 @@
 #include <zephyr/bluetooth/gap.h>
 #include <zephyr/bluetooth/uuid.h>
 
-#define ADV_DURATION_MS 15000
+#define ADV_DURATION_MS 60000
 
 int bluetooth_init(void);
-void ble_alerte_temp_trigger(void);
-void ble_alerte_temp_handler(struct k_work *work);
-void ble_stop_alerte_temp_handler(struct k_work *work);
+void ble_update_bit_trigger(int bit_number, int bit_value);
+void ble_launch_alerte_handler(struct k_work *work);
+void ble_stop_alerte_handler(struct k_work *work);
 
 #endif

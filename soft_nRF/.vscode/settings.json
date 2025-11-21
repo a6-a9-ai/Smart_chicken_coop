@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "gpio.h": "c",
-        "bluetooth.h": "c"
+        "bluetooth.h": "c",
+        "gap.h": "c",
+        "hci.h": "c"
     }
 }
