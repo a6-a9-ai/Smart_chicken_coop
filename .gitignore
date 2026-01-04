@@ -2,6 +2,13 @@
 *.swp
 *~
 
-# build
+# builds
 /build*/
 /soft_nRF/build*/
+/soft_nRF/build/*
+/soft_nRF_receiver/build*/
+/PCBs/receiver_PCB/receiver/fp-info-cache
+/PCBs/early_energy_test_PCB/energy_test_PCB/energy_test_PCB-backups
+
+
+/PCBs/receiver_PCB/receiver/receiver-backups
