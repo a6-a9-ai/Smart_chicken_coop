@@ -1,0 +1,51 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# BPW34
+#
+DEF BPW34 D 0 40 Y N 1 L N
+F0 "D" -122 177 50 H V L BNN
+F1 "BPW34" -140 -130 50 H V L BNN
+F2 "DIO_BPW34" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Vishay" 0 0 50 H I L BNN "MF"
+F5 "2.20mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F6 "None" 0 0 50 H I L BNN "Package"
+F7 "None" 0 0 50 H I L BNN "Price"
+F8 "https://www.snapeda.com/parts/BPW34/Vishay/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F9 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
+F10 "2.1" 0 0 50 H I L BNN "PARTREV"
+F11 "https://www.snapeda.com/parts/BPW34/Vishay/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F12 "BPW34" 0 0 50 H I L BNN "MP"
+F13 "\n                        \n                            Photodiode 900nm - 130° 2-DIP (0.200, 5.10mm)\n                        \n" 0 0 50 H I L BNN "Description"
+F14 "In Stock" 0 0 50 H I L BNN "Availability"
+F15 "Vishay" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 10 -100 60 -100 0 N
+P 2 0 0 10 -100 0 -100 -60 N
+P 2 0 0 10 -100 -60 0 0 N
+P 2 0 0 10 0 0 -100 60 N
+P 2 0 0 10 0 60 0 -60 N
+P 2 0 0 6 -100 0 -200 0 N
+P 2 0 0 10 -70 80 0 160 N
+P 2 0 0 10 -57 118 -35 99 N
+P 2 0 0 10 -35 99 -70 80 N
+P 2 0 0 10 -70 80 -57 118 N
+P 2 0 0 10 -57 118 -58 89 N
+P 2 0 0 10 -58 89 -53 89 N
+P 2 0 0 10 -42 102 -51 96 N
+P 2 0 0 10 -21 76 49 156 N
+P 2 0 0 10 -8 114 14 95 N
+P 2 0 0 10 14 95 -21 76 N
+P 2 0 0 10 -21 76 -8 114 N
+P 2 0 0 10 -8 114 -9 85 N
+P 2 0 0 10 -9 85 -4 85 N
+P 2 0 0 10 7 98 -2 92 N
+X ~ C 200 0 200 L 40 40 0 0 P 
+X ~ A -300 0 100 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

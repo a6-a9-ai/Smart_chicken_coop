@@ -39,9 +39,9 @@
 		(tenting front back)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
-			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_0200a0af)
 			(disableapertmacros no)
-			(usegerberextensions no)
+			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
@@ -72,9 +72,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "gerber/")
 		)
 	)
 	(net 0 "")
@@ -1732,6 +1732,7 @@
 		(property "Reference" "VR1"
 			(at 0.107 -2.3864 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "622c7ab6-e046-4b57-8ecf-69961c23a9ea")
 			(effects
 				(font
@@ -4853,6 +4854,7 @@
 		(property "Reference" "U1"
 			(at 0.107 -2.3864 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "7e72ea1b-b971-4c5f-affb-d3661eefc461")
 			(effects
 				(font
@@ -6065,6 +6067,7 @@
 		(property "Reference" "U3"
 			(at 0 0 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "ff9fd7be-9325-453f-83fc-0fdc2f62ae6a")
 			(effects
 				(font
@@ -6076,6 +6079,7 @@
 		(property "Value" "LTC4071EMS8E_PBF"
 			(at 0 0 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "70711d9d-0ca8-4e0f-87df-71a17972adb2")
 			(effects
 				(font
@@ -8777,20 +8781,20 @@
 		(uuid "ea8ab276-5474-4d82-8ede-43ee7c8663a8")
 	)
 	(segment
+		(start 129.75 137.25)
+		(end 129.5 137.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 11)
+		(uuid "279a4307-3738-4e5b-8da9-99ea3a5617be")
+	)
+	(segment
 		(start 128 137.5)
 		(end 125.825 139.675)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 11)
 		(uuid "4e665cd1-d878-4b27-b95a-0877fc9a7a19")
-	)
-	(segment
-		(start 129.75 137.25)
-		(end 129.5 137.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 11)
-		(uuid "56272e6b-afff-4ad7-b67f-878edefcbe26")
 	)
 	(segment
 		(start 129.5 137.5)
@@ -8809,20 +8813,12 @@
 		(uuid "7d401aa9-f90f-41ce-b6d6-5e0294a67a91")
 	)
 	(segment
-		(start 131 137.25)
-		(end 130.94 137.19)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 11)
-		(uuid "9cb9108e-c40b-4388-9ca9-3d24092f08a9")
-	)
-	(segment
 		(start 136 137.25)
 		(end 129.75 137.25)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 11)
-		(uuid "c58edf62-dc46-4437-8e9e-b85afa05f947")
+		(uuid "8ec3c5c0-2881-4953-903f-77f46f403dd4")
 	)
 	(segment
 		(start 127 144.5)
