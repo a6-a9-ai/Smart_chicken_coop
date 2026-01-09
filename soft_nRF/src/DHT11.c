@@ -9,7 +9,7 @@ static const struct pwm_dt_spec fan_pwm = PWM_DT_SPEC_GET(FAN_PWM_NODE);
 static const struct device *dht_gpio = NULL;
 int DHT11_corrected_temperature = 20;
 uint32_t duty_cycle;
-bool previous_fan_pwm = true;
+bool previous_fan_state = true;
 
 extern struct k_work_q sensor_wq;
 extern struct k_work_q critical_wq;
@@ -93,24 +93,30 @@ void dht11_periodic_work_handler(struct k_work *work){
         DHT11_corrected_temperature = temperature - 1;
         LOG_INF("Humidity: %d %% | Temp: %d °C", humidity, DHT11_corrected_temperature);
 
-        if (DHT11_corrected_temperature > FAN_THRESHOLD_TEMP_SUP && !previous_fan_pwm){
-            ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 1);                          // Lancer alerte BLE via critical_wq
+        // Update BLE Temp bit based strictly on Upper Threshold
+        if (DHT11_corrected_temperature > FAN_THRESHOLD_TEMP_SUP) {
+             ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 1);
+        } else {
+             ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 0);
+        }
+
+        // Fan Control Logic (Maintained existing hysteresis for fan)
+        if (DHT11_corrected_temperature >= FAN_THRESHOLD_TEMP_SUP && !previous_fan_state){
             duty_cycle = PWM_PERIOD_USEC;
             k_work_submit_to_queue(&critical_wq, &fan_control_work);
-            previous_fan_pwm = true;
+            previous_fan_state = true;
 
-        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP_SUP && DHT11_corrected_temperature > FAN_THRESHOLD_TEMP_INF && previous_fan_pwm) {
-            ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 0);
+        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP_SUP && DHT11_corrected_temperature > FAN_THRESHOLD_TEMP_INF && previous_fan_state) {
             duty_cycle = 0;
             k_work_submit_to_queue(&critical_wq, &fan_control_work);
-            previous_fan_pwm = false;
+            previous_fan_state = false;
 
-        } else if (DHT11_corrected_temperature < FAN_THRESHOLD_TEMP_INF) {
-            ble_update_bit_trigger(BLE_PAQUET_TEMP_BIT, 1);
-            if (previous_fan_pwm){
+        } else if (DHT11_corrected_temperature <= FAN_THRESHOLD_TEMP_INF) {
+             // cold case: fan off if it was on
+            if (previous_fan_state){
                 duty_cycle = 0;
                 k_work_submit_to_queue(&critical_wq, &fan_control_work);
-                previous_fan_pwm = false;
+                previous_fan_state = false;
             }
         }
     } else {

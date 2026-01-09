@@ -39,7 +39,7 @@
 		(tenting front back)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
-			(plot_on_all_layers_selection 0x00000000_00000000_00000000_0200a0af)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes yes)
@@ -3339,7 +3339,7 @@
 			)
 		)
 		(property "Value" "2N2222"
-			(at 7.20046 3.72176 0)
+			(at 7.20046 0 0)
 			(layer "F.Fab")
 			(uuid "a887d57f-5544-4cd7-9e45-218eb9dce9cd")
 			(effects

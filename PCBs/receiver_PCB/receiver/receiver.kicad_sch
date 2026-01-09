@@ -334,6 +334,236 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "6570XX140201_657002140201:6570XX140201_657002140201"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 2.26 -0.555 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "6570XX140201_657002140201"
+				(at 2.22 -2.36 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "6570XX140201_657002140201:657002140201"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Wurth Elektronik"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "THT Single Row Male Header Vertical with Snap-in Plastic Pegs - Glow-Wire, 02 Pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "657002140201"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "6570XX140201_657002140201_0_0"
+				(rectangle
+					(start -3.81 -2.54)
+					(end 1.27 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -2.54 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0.635)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0.635)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "AT-1224-TWT-R:AT-1224-TWT-R"
 			(pin_names
 				(offset 1.016)
@@ -970,1060 +1200,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NRF54L15-CAAA-R:NRF54L15-CAAA-R"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -35.56 44.45 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "NRF54L15-CAAA-R"
-				(at -35.56 -41.91 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "NRF54L15-CAAA-R:BGA47N30P7X7_245X224X46N"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Nordic Semiconductors"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "0.463 mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "CREATOR" "AAMIR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/NRF54L15-CAAA-R/Nordic+Power/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "IPC-7351B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "0.10"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "VERIFIER" "RODRIGO"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/NRF54L15-CAAA-R/Nordic+Power/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "NRF54L15-CAAA-R"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "RF System on a Chip - SoC Ultra-low power Bluetooth Multiprotocol 5.4 SoC System-on-Chip"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "NORDIC POWER"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "NRF54L15-CAAA-R_0_0"
-				(rectangle
-					(start -35.56 -40.64)
-					(end 35.56 43.18)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -40.64 25.4 0)
-					(length 5.08)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -40.64 22.86 0)
-					(length 5.08)
-					(name "SWDCLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 20.32 0)
-					(length 5.08)
-					(name "SWDIO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -40.64 15.24 0)
-					(length 5.08)
-					(name "XC1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -40.64 12.7 0)
-					(length 5.08)
-					(name "XC2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 7.62 0)
-					(length 5.08)
-					(name "P0.00"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 5.08 0)
-					(length 5.08)
-					(name "P0.01"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 2.54 0)
-					(length 5.08)
-					(name "P0.02"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 0 0)
-					(length 5.08)
-					(name "P0.03"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -2.54 0)
-					(length 5.08)
-					(name "P0.04/GRTCLFCLKOUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -7.62 0)
-					(length 5.08)
-					(name "P1.00/XL1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -10.16 0)
-					(length 5.08)
-					(name "P1.01/XL2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -12.7 0)
-					(length 5.08)
-					(name "P1.02/NFC1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -15.24 0)
-					(length 5.08)
-					(name "P1.03/NFC2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -17.78 0)
-					(length 5.08)
-					(name "P1.04/ASO(0)/AIN0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -20.32 0)
-					(length 5.08)
-					(name "P1.05/ASI(0)/RADIO(6)/AIN1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -22.86 0)
-					(length 5.08)
-					(name "P1.06/ASO(1)/AIN2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -25.4 0)
-					(length 5.08)
-					(name "P1.07/ASI(1)/AIN3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -40.64 -27.94 0)
-					(length 5.08)
-					(name "P1.08/CLK16M/EXTREF"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 40.64 180)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 40.64 180)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 38.1 180)
-					(length 5.08)
-					(name "DCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 35.56 180)
-					(length 5.08)
-					(name "DECA"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 33.02 180)
-					(length 5.08)
-					(name "DECD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 30.48 180)
-					(length 5.08)
-					(name "DECRF"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 40.64 25.4 180)
-					(length 5.08)
-					(name "ANT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 20.32 180)
-					(length 5.08)
-					(name "P1.09/ASO(2)/RADIO(0)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 17.78 180)
-					(length 5.08)
-					(name "P1.10/ASI(2)/RADIO(1)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 15.24 180)
-					(length 5.08)
-					(name "P1.11/ASO(3)/RADIO(2)/AIN4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 12.7 180)
-					(length 5.08)
-					(name "P1.12/ASI(3)/RADIO(3)/AIN5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 10.16 180)
-					(length 5.08)
-					(name "P1.13/RADIO(4)/AIN6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 7.62 180)
-					(length 5.08)
-					(name "P1.14/RADIO(5)/AIN7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 5.08 180)
-					(length 5.08)
-					(name "P1.15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 0 180)
-					(length 5.08)
-					(name "P2.00"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -2.54 180)
-					(length 5.08)
-					(name "P2.01"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -5.08 180)
-					(length 5.08)
-					(name "P2.02"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -7.62 180)
-					(length 5.08)
-					(name "P2.03"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -10.16 180)
-					(length 5.08)
-					(name "P2.04"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -12.7 180)
-					(length 5.08)
-					(name "P2.05"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -15.24 180)
-					(length 5.08)
-					(name "P2.06/TRACECLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -17.78 180)
-					(length 5.08)
-					(name "P2.07/TRACEDATA(0)/SWO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "E4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -20.32 180)
-					(length 5.08)
-					(name "P2.08/TRACEDATA(1)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "D4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -22.86 180)
-					(length 5.08)
-					(name "P2.09/TRACEDATA(2)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "F3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 40.64 -25.4 180)
-					(length 5.08)
-					(name "P2.10/TRACEDATA(3)"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 -35.56 180)
-					(length 5.08)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 -35.56 180)
-					(length 5.08)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "G4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 -38.1 180)
-					(length 5.08)
-					(name "VSS_PA"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "WP7113ID:WP7113ID"
 			(pin_names
 				(offset 1.016)
@@ -2464,10 +1640,10 @@
 		)
 	)
 	(junction
-		(at 124.46 106.68)
+		(at 152.4 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "36ecaf76-96d9-4e9d-8222-27b2f87aefad")
+		(uuid "253f7e0d-7534-44a0-8578-9001a6027a08")
 	)
 	(junction
 		(at 129.54 106.68)
@@ -2480,6 +1656,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d5a9dc3-4b52-4e40-8403-224ebdab4805")
+	)
+	(junction
+		(at 48.26 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "412b53d9-516a-4408-93bb-5a169c8f07e5")
+	)
+	(junction
+		(at 48.26 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70fd7f4c-4cb3-40c8-b476-c94a47832d0f")
 	)
 	(junction
 		(at 138.43 62.23)
@@ -2500,20 +1688,28 @@
 		(uuid "97e4511c-5625-4efc-8dd9-2e4b2c87b569")
 	)
 	(junction
+		(at 116.84 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2942402-141a-4e8b-90e7-8a019881840a")
+	)
+	(junction
 		(at 149.86 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6c2225e-f580-432e-b734-4488544d4161")
 	)
-	(wire
-		(pts
-			(xy 41.91 139.7) (xy 43.18 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02211384-9bff-457e-aca2-ecd7f75455e4")
+	(junction
+		(at 48.26 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d63cd402-26dd-4b0f-bb28-5fe911fa0e0e")
+	)
+	(junction
+		(at 152.4 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0e46d95-e038-4d0e-8b3e-03ac55a51bf7")
 	)
 	(wire
 		(pts
@@ -2547,13 +1743,23 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 109.22) (xy 38.1 135.89)
+			(xy 48.26 147.32) (xy 48.26 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e542503-1d48-4119-83f7-8cb39dd74bc9")
+		(uuid "27ad251b-8929-40e4-b186-e276e23c81c9")
+	)
+	(wire
+		(pts
+			(xy 48.26 128.27) (xy 48.26 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bb07363-5439-48af-b01a-37418860ab2f")
 	)
 	(wire
 		(pts
@@ -2574,6 +1780,16 @@
 			(type default)
 		)
 		(uuid "2e6c5c6f-8667-4327-9116-0f7c629dcdbc")
+	)
+	(wire
+		(pts
+			(xy 116.84 106.68) (xy 129.54 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f45e1d7-5a23-4cbf-bf0e-d23b4f4c3c7e")
 	)
 	(wire
 		(pts
@@ -2607,7 +1823,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 48.26) (xy 152.4 52.07)
+			(xy 152.4 48.26) (xy 152.4 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2654,16 +1870,6 @@
 			(type default)
 		)
 		(uuid "56c5f86b-8e26-43dd-b41c-288b5c36fd8c")
-	)
-	(wire
-		(pts
-			(xy 36.83 137.16) (xy 41.91 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5849a63b-144b-4cf0-a6d3-46092ae349bd")
 	)
 	(wire
 		(pts
@@ -2727,13 +1933,23 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 106.68) (xy 119.38 106.68)
+			(xy 152.4 49.53) (xy 157.48 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71b39213-eca8-47da-a096-30d9dedc1799")
+		(uuid "7226ee44-2e07-42f0-be30-926e8641bceb")
+	)
+	(wire
+		(pts
+			(xy 36.83 137.16) (xy 48.26 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "724843ab-a066-47f2-9287-f363e6ee9675")
 	)
 	(wire
 		(pts
@@ -2744,26 +1960,6 @@
 			(type default)
 		)
 		(uuid "732aedab-0622-4597-b0c9-f2ebaacac8c5")
-	)
-	(wire
-		(pts
-			(xy 41.91 142.24) (xy 43.18 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "734fb65c-8b18-4feb-8852-a9841f7d7db1")
-	)
-	(wire
-		(pts
-			(xy 124.46 106.68) (xy 129.54 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "774e2c2c-1eaf-4339-a63f-3fde89d9ea84")
 	)
 	(wire
 		(pts
@@ -2824,6 +2020,26 @@
 			(type default)
 		)
 		(uuid "867d49f9-89b0-400b-887b-2b44e4aa0ab1")
+	)
+	(wire
+		(pts
+			(xy 38.1 118.11) (xy 48.26 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d76eb2e-cd07-4b3d-9ae3-e5e771ae667f")
+	)
+	(wire
+		(pts
+			(xy 48.26 137.16) (xy 48.26 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960ae20b-04fc-414d-bf8a-8cef2448a15e")
 	)
 	(wire
 		(pts
@@ -2897,16 +2113,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 135.89) (xy 41.91 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9067ad2-caa8-4254-a86a-26db5bf9face")
-	)
-	(wire
-		(pts
 			(xy 134.62 101.6) (xy 129.54 106.68)
 		)
 		(stroke
@@ -2917,7 +2123,17 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 147.32) (xy 41.91 147.32)
+			(xy 152.4 52.07) (xy 157.48 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc742151-6d46-4abd-9ad5-5a97c1b150ba")
+	)
+	(wire
+		(pts
+			(xy 41.91 147.32) (xy 48.26 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2944,6 +2160,16 @@
 			(type default)
 		)
 		(uuid "d3c6dcaa-6f59-418b-8f79-42302c6fae01")
+	)
+	(wire
+		(pts
+			(xy 38.1 109.22) (xy 38.1 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc05302b-b26f-4105-955c-ac14a0c45e28")
 	)
 	(wire
 		(pts
@@ -2974,6 +2200,26 @@
 			(type default)
 		)
 		(uuid "e8b49a92-cb16-4fc8-8906-e804871e962a")
+	)
+	(wire
+		(pts
+			(xy 152.4 49.53) (xy 152.4 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f06d7b41-513b-42c7-9f80-5726c6a45b42")
+	)
+	(wire
+		(pts
+			(xy 116.84 106.68) (xy 116.84 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f582dafa-30e3-4a53-86ad-12c291b803c4")
 	)
 	(wire
 		(pts
@@ -3623,6 +2869,457 @@
 		)
 	)
 	(symbol
+		(lib_id "6570XX140201_657002140201:6570XX140201_657002140201")
+		(at 53.34 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e58a114-b4a4-4b92-9468-f5160fa06e3d")
+		(property "Reference" "J3"
+			(at 54.61 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6570XX140201_657002140201"
+			(at 54.61 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCB_footprints_connector:657002140201"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Wurth Elektronik"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "THT Single Row Male Header Vertical with Snap-in Plastic Pegs - Glow-Wire, 02 Pins"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=snap"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "657002140201"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=eda"
+			(at 53.34 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9423eb68-f2c9-4245-8478-6e780c4e74c9")
+		)
+		(pin "1"
+			(uuid "e5e1cf4c-e83b-4eda-bb04-d6ca485dd5f2")
+		)
+		(instances
+			(project "receiver"
+				(path "/a43814ce-c6c4-4f5b-bb43-c8ad6391dbc8"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "6570XX140201_657002140201:6570XX140201_657002140201")
+		(at 111.76 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31c2646c-2044-40e5-9a8c-58591df23087")
+		(property "Reference" "J2"
+			(at 113.03 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6570XX140201_657002140201"
+			(at 113.03 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCB_footprints_connector:657002140201"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Wurth Elektronik"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "THT Single Row Male Header Vertical with Snap-in Plastic Pegs - Glow-Wire, 02 Pins"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=snap"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "657002140201"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=eda"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "87107b54-5a54-43be-a5ea-361b6206c62b")
+		)
+		(pin "1"
+			(uuid "d1f9144d-6eb1-4582-a8f5-a533122852bd")
+		)
+		(instances
+			(project ""
+				(path "/a43814ce-c6c4-4f5b-bb43-c8ad6391dbc8"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "6570XX140201_657002140201:6570XX140201_657002140201")
+		(at 53.34 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31eb16c9-6993-403d-9400-336b48cda42f")
+		(property "Reference" "J4"
+			(at 54.61 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6570XX140201_657002140201"
+			(at 54.61 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCB_footprints_connector:657002140201"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Wurth Elektronik"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "THT Single Row Male Header Vertical with Snap-in Plastic Pegs - Glow-Wire, 02 Pins"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=snap"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "657002140201"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=eda"
+			(at 53.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a8c4a7e-907a-443f-8009-1365db92ab48")
+		)
+		(pin "1"
+			(uuid "dc226504-460c-4679-931e-61f9c4dfc11d")
+		)
+		(instances
+			(project "receiver"
+				(path "/a43814ce-c6c4-4f5b-bb43-c8ad6391dbc8"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 113.03 62.23 270)
 		(unit 1)
@@ -3690,32 +3387,35 @@
 		)
 	)
 	(symbol
-		(lib_id "NRF54L15-CAAA-R:NRF54L15-CAAA-R")
-		(at 83.82 147.32 0)
+		(lib_id "6570XX140201_657002140201:6570XX140201_657002140201")
+		(at 53.34 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4cdfb7e7-5ad6-4352-9d9c-44c832d82e36")
-		(property "Reference" "U1"
-			(at 83.82 102.87 0)
+		(fields_autoplaced yes)
+		(uuid "4c8e1d70-3f38-47b7-b430-577dcac9276d")
+		(property "Reference" "J5"
+			(at 54.61 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "NRF54L15-CAAA-R"
-			(at 83.82 102.87 0)
+		(property "Value" "6570XX140201_657002140201"
+			(at 54.61 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCB_footprints:BGA47N30P7X7_245X224X46N"
-			(at 83.82 147.32 0)
+		(property "Footprint" "PCB_footprints_connector:657002140201"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3725,7 +3425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 147.32 0)
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3734,7 +3434,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 147.32 0)
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3742,18 +3442,8 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Nordic Semiconductors"
-			(at 83.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.463 mm"
-			(at 83.82 147.32 0)
+		(property "MF" "Wurth Elektronik"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3762,18 +3452,8 @@
 				(hide yes)
 			)
 		)
-		(property "CREATOR" "AAMIR"
-			(at 83.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 83.82 147.32 0)
+		(property "Description_1" "THT Single Row Male Header Vertical with Snap-in Plastic Pegs - Glow-Wire, 02 Pins"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3783,7 +3463,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 83.82 147.32 0)
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3792,8 +3472,8 @@
 				(hide yes)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/NRF54L15-CAAA-R/Nordic+Power/view-part/?ref=eda"
-			(at 83.82 147.32 0)
+		(property "Price" "None"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,8 +3482,8 @@
 				(hide yes)
 			)
 		)
-		(property "STANDARD" "IPC-7351B"
-			(at 83.82 147.32 0)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=snap"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3812,48 +3492,8 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "0.10"
-			(at 83.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" "RODRIGO"
-			(at 83.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NRF54L15-CAAA-R/Nordic+Power/view-part/?ref=snap"
-			(at 83.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "NRF54L15-CAAA-R"
-			(at 83.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "RF System on a Chip - SoC Ultra-low power Bluetooth Multiprotocol 5.4 SoC System-on-Chip"
-			(at 83.82 147.32 0)
+		(property "MP" "657002140201"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3863,7 +3503,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 83.82 147.32 0)
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3872,8 +3512,8 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "NORDIC POWER"
-			(at 83.82 147.32 0)
+		(property "Check_prices" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=eda"
+			(at 53.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3882,151 +3522,16 @@
 				(hide yes)
 			)
 		)
-		(pin "F5"
-			(uuid "0410b456-b85b-44a5-b8f7-97b684808e0b")
+		(pin "2"
+			(uuid "23ef9934-834d-4ccd-92d0-db361435f172")
 		)
-		(pin "G5"
-			(uuid "c3acbd88-a301-4d90-b04a-130660a92538")
-		)
-		(pin "G7"
-			(uuid "dca55fa0-319e-4d9f-948c-c31d7a37488a")
-		)
-		(pin "A3"
-			(uuid "b97666b3-b203-4c0b-b585-4a61cca3d6a0")
-		)
-		(pin "B4"
-			(uuid "25da3e5f-48d9-425f-b226-a723901bfa29")
-		)
-		(pin "B5"
-			(uuid "7d4e96e6-f02f-45eb-9dc8-c1847fbbe664")
-		)
-		(pin "C4"
-			(uuid "ec68b48c-8699-4aea-b58c-51a53c9f624d")
-		)
-		(pin "B6"
-			(uuid "b4724cbe-4c58-4900-85d8-b99dfb6e642c")
-		)
-		(pin "G6"
-			(uuid "693acb64-b49a-4d0e-94b0-70abdfdee592")
-		)
-		(pin "F6"
-			(uuid "ad959a8e-67c8-48cf-90a6-fb2d7586a4eb")
-		)
-		(pin "E5"
-			(uuid "d21a0fdb-99d3-427f-8b82-d95be25bec03")
-		)
-		(pin "C3"
-			(uuid "2e6df148-9c9a-470c-8ded-3fc8e32c8442")
-		)
-		(pin "D4"
-			(uuid "7fbf8df2-4f20-4735-8c53-9651826d1d4f")
-		)
-		(pin "C2"
-			(uuid "df59b104-81d3-4c54-9f64-d80e85d3a76c")
-		)
-		(pin "G2"
-			(uuid "345836f5-d1fd-4202-8655-9143b26310f5")
-		)
-		(pin "G4"
-			(uuid "fe1bbdab-03d6-47e1-9abd-ea1eca739bf4")
-		)
-		(pin "F3"
-			(uuid "a555ff6b-dc78-4f74-ba60-8a772e6c5b8f")
-		)
-		(pin "E4"
-			(uuid "c95a12aa-2355-4422-bd01-0595c7b7e27d")
-		)
-		(pin "F4"
-			(uuid "9b85f1e2-4443-470d-825e-3b155f9ba36d")
-		)
-		(pin "A6"
-			(uuid "77a3c976-be3d-4206-9c77-7e9a180b6bf0")
-		)
-		(pin "E3"
-			(uuid "9ce1b8c0-afc3-4626-b744-281c8987fa4e")
-		)
-		(pin "D2"
-			(uuid "619f51d0-406c-4b2c-8e72-82b3746a4a08")
-		)
-		(pin "F2"
-			(uuid "1df31d43-39f9-4d6e-a37a-30a11d0df390")
-		)
-		(pin "F1"
-			(uuid "142fb50d-6184-4296-a7ca-81fc18ea51d8")
-		)
-		(pin "D5"
-			(uuid "cd66d0ea-9a20-4fb5-b710-365b9677c6db")
-		)
-		(pin "D6"
-			(uuid "4c574533-7301-4646-9283-d077ae750e4f")
-		)
-		(pin "A1"
-			(uuid "d3defeba-0868-4c31-830a-7f859c91722b")
-		)
-		(pin "E1"
-			(uuid "cef87464-81f5-4668-bc6e-ea9e3e62bf0b")
-		)
-		(pin "C5"
-			(uuid "2d2b7124-90d0-402e-a18f-b81b331e1bc8")
-		)
-		(pin "D3"
-			(uuid "94ecac78-0077-415e-a96f-f0df975e6fa0")
-		)
-		(pin "G1"
-			(uuid "17905470-b8f8-4d28-b01d-cdde552f28c1")
-		)
-		(pin "C7"
-			(uuid "48670a08-f001-415d-b226-0805c7513918")
-		)
-		(pin "A2"
-			(uuid "3bb88c1f-4431-4e4f-aa4f-27bc39095a06")
-		)
-		(pin "C6"
-			(uuid "e0084730-03e4-4f32-b4fd-408fdf8a3c2c")
-		)
-		(pin "E2"
-			(uuid "dbf8124c-73ce-4fe1-b031-d9e95e4fd621")
-		)
-		(pin "E7"
-			(uuid "947121bc-fa6b-4874-bee1-b9aaeffcdaf6")
-		)
-		(pin "D7"
-			(uuid "15469147-500c-4877-8506-6bbc0c5c2fe6")
-		)
-		(pin "B7"
-			(uuid "e0ebdc3b-ace3-45e3-918f-5edfc05b0f58")
-		)
-		(pin "A7"
-			(uuid "456ef765-edc0-4e5a-b52c-58d89a42ef24")
-		)
-		(pin "E6"
-			(uuid "99bd3b8f-5602-4e65-b8db-da4ab9280bfe")
-		)
-		(pin "F7"
-			(uuid "25f78ef9-a6ed-4066-8b22-10347992d154")
-		)
-		(pin "A4"
-			(uuid "8aa0eb5a-2b5c-4a42-8788-943121104379")
-		)
-		(pin "G3"
-			(uuid "286578b1-bbf8-4d93-91e1-b75449675873")
-		)
-		(pin "A5"
-			(uuid "9643bf8a-fda0-438d-9d18-d78827c41a0d")
-		)
-		(pin "B1"
-			(uuid "c33f48fc-c572-4a90-91ba-13913d1f9312")
-		)
-		(pin "B3"
-			(uuid "c4d617ef-b792-47b3-9404-ca662d5f62b1")
-		)
-		(pin "D1"
-			(uuid "b9bf3cfe-3781-415c-8efd-393ad64e2b55")
+		(pin "1"
+			(uuid "ff6662d0-457b-4365-91ad-b55a8de4ba5b")
 		)
 		(instances
-			(project ""
+			(project "receiver"
 				(path "/a43814ce-c6c4-4f5b-bb43-c8ad6391dbc8"
-					(reference "U1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -5003,6 +4508,157 @@
 			(project "receiver"
 				(path "/a43814ce-c6c4-4f5b-bb43-c8ad6391dbc8"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "6570XX140201_657002140201:6570XX140201_657002140201")
+		(at 162.56 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eca08d83-ba7c-4a82-9ce8-30c71eee5a97")
+		(property "Reference" "J1"
+			(at 163.83 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6570XX140201_657002140201"
+			(at 163.83 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCB_footprints_connector:657002140201"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Wurth Elektronik"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "THT Single Row Male Header Vertical with Snap-in Plastic Pegs - Glow-Wire, 02 Pins"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=snap"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "657002140201"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/657002140201/Wurth+Electronics/view-part/?ref=eda"
+			(at 162.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9180ff4-c131-4323-94fd-7bf2cd204300")
+		)
+		(pin "2"
+			(uuid "476d65c9-c0fe-445c-a745-d468573eaded")
+		)
+		(instances
+			(project ""
+				(path "/a43814ce-c6c4-4f5b-bb43-c8ad6391dbc8"
+					(reference "J1")
 					(unit 1)
 				)
 			)

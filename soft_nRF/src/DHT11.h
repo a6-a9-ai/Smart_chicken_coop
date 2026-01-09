@@ -13,7 +13,7 @@
 #define DHT_PIN                         4
 #define MEASURE_DHT11_PERIOD_MS         5000
 
-#define FAN_THRESHOLD_TEMP_SUP          20
+#define FAN_THRESHOLD_TEMP_SUP          23
 #define FAN_THRESHOLD_TEMP_INF          -5
 #define PWM_PERIOD_USEC                 40
 

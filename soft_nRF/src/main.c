@@ -1,4 +1,5 @@
 #include "DHT11.h"
+//#include "SCD30.h"
 #include "bluetooth.h"
 
 #include <zephyr/kernel.h>
@@ -20,6 +21,7 @@ struct k_work_q critical_wq;
 
 // Definition of dht11_periodic_work
 K_WORK_DELAYABLE_DEFINE(dht11_periodic_work, dht11_periodic_work_handler);
+//K_WORK_DELAYABLE_DEFINE(scd30_periodic_work, scd30_periodic_work_handler);
 
 int main(void){
     if (bluetooth_init() < 0){
@@ -28,6 +30,12 @@ int main(void){
     if (dht11_init() < 0){
         LOG_ERR("DHT11 init failed!");
     }
+    //if (scd30_init() < 0){
+    //    LOG_ERR("SCD30 init failed!");
+    //} else {
+    //    k_work_schedule_for_queue(&sensor_wq, &scd30_periodic_work, K_SECONDS(4));
+    //}
+
     // Workqueues initialisation
     k_work_queue_start(&sensor_wq, sensor_stack_area,
                        K_THREAD_STACK_SIZEOF(sensor_stack_area),
