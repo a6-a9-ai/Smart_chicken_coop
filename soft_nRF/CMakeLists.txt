@@ -8,4 +8,7 @@ target_sources(app PRIVATE
         src/DHT11.c
         src/bluetooth.c
         #src/SCD30.c
+        src/pir.c
+        src/uart.c
+        src/s30.c
         )

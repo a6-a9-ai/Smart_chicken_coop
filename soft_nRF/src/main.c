@@ -1,6 +1,28 @@
+/*******************************************************************************/
+/*::::'######::'##::::'##:'####::'######::'##:::'##:'########:'##::: ##::::::::*/
+/*:::'##... ##: ##:::: ##:. ##::'##... ##: ##::'##:: ##.....:: ###:: ##::::::::*/
+/*::: ##:::..:: ##:::: ##:: ##:: ##:::..:: ##:'##::: ##::::::: ####: ##::::::::*/
+/*::: ##::::::: #########:: ##:: ##::::::: #####:::: ######::: ## ## ##::::::::*/
+/*::: ##::::::: ##.... ##:: ##:: ##::::::: ##. ##::: ##...:::: ##. ####::::::::*/
+/*::: ##::: ##: ##:::: ##:: ##:: ##::: ##: ##:. ##:: ##::::::: ##:. ###::::::::*/
+/*:::. ######:: ##:::: ##:'####:. ######:: ##::. ##: ########: ##::. ##::::::::*/
+/*::::......:::..:::::..::....:::......:::..::::..::........::..::::..:::::::::*/
+/*::::'######:::'#######:::'#######::'########:::::main.c::::::::::::::::::::::*/
+/*:::'##... ##:'##.... ##:'##.... ##: ##.... ##::::::::::::::::::::::::::::::::*/
+/*::: ##:::..:: ##:::: ##: ##:::: ##: ##:::: ##::::Author: a6a9aia:::::::::::::*/
+/*::: ##::::::: ##:::: ##: ##:::: ##: ########:::::<a5a8ahaiac@proton.me>::::::*/
+/*::: ##::::::: ##:::: ##: ##:::: ##: ##.....::::::::::::::::::::::::::::::::::*/
+/*::: ##::: ##: ##:::: ##: ##:::: ##: ##:::::::::::Created: 2025/09/01:::::::::*/
+/*:::. ######::. #######::. #######:: ##:::::::::::Updated: 2026/01/10:::::::::*/
+/*::::......::::.......::::.......:::..::::::::::::::::::::::::::::::::::::::::*/
+/*******************************************************************************/
+
 #include "DHT11.h"
+#include "pir.h"
+#include "s30.h"
 //#include "SCD30.h"
 #include "bluetooth.h"
+#include "uart.h"
 
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
@@ -21,6 +43,7 @@ struct k_work_q critical_wq;
 
 // Definition of dht11_periodic_work
 K_WORK_DELAYABLE_DEFINE(dht11_periodic_work, dht11_periodic_work_handler);
+K_WORK_DELAYABLE_DEFINE(s30_periodic_work, s30_periodic_work_handler);
 //K_WORK_DELAYABLE_DEFINE(scd30_periodic_work, scd30_periodic_work_handler);
 
 int main(void){
@@ -29,6 +52,12 @@ int main(void){
     }
     if (dht11_init() < 0){
         LOG_ERR("DHT11 init failed!");
+    }
+    if (pir_init() < 0){
+        LOG_ERR("PIR init failed!");
+    }
+    if (s30_init() < 0){
+        LOG_ERR("S30 init failed!");
     }
     //if (scd30_init() < 0){
     //    LOG_ERR("SCD30 init failed!");
@@ -45,11 +74,19 @@ int main(void){
                        CRITICAL_WQ_PRIORITY, NULL);
     LOG_INF("Workqueues started (sensor=%d, critical=%d)", SENSOR_WQ_PRIORITY, CRITICAL_WQ_PRIORITY);
 
+    if (uart_init() < 0){
+        LOG_ERR("UART init failed!");
+    } else {
+        LOG_INF("UART initialized successfully");
+    }
+
     if (fan_control_init() < 0){
         LOG_ERR("Fan control init failed!");
     }
-
-    k_work_schedule_for_queue(&sensor_wq, &dht11_periodic_work, K_SECONDS(3)); // Scheduling dht11_periodic_work in 3 seconds
+    // Scheduling periodic_sensors_works
+    k_work_schedule_for_queue(&sensor_wq, &dht11_periodic_work, K_SECONDS(3));
+    k_work_schedule_for_queue(&sensor_wq, &s30_periodic_work, K_SECONDS(7));
+    k_work_schedule_for_queue(&sensor_wq, &pir_work, K_MSEC(MEASURE_PIR_PERIOD_MS));
 
     while(1){
         k_sleep(K_SECONDS(10));

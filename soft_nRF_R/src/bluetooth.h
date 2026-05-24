@@ -7,6 +7,7 @@
 #include <zephyr/bluetooth/hci.h>
 #include <zephyr/net/buf.h>
 #include <zephyr/sys/byteorder.h>
+#include <zephyr/drivers/gpio.h>
 
 int scanner_init(void);
 

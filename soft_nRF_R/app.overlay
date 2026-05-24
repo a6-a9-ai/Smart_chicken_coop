@@ -1,0 +1,4 @@
+&reg_vregmain {
+    regulator-initial-mode = <NRF54L_REGU_MODE_DCDC>;
+    status = "okay";
+};

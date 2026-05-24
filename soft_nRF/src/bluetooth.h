@@ -18,4 +18,11 @@ void ble_update_bit_trigger(uint8_t bit, uint8_t value);
 
 void ble_stop_alerte_handler(struct k_work *work);
 
+typedef struct {
+    uint16_t company_id;
+    uint8_t payload;
+} ble_custom_data;
+
+
+
 #endif
