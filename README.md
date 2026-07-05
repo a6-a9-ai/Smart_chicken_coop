@@ -9,6 +9,47 @@ A lightweight, event-driven application built on **Zephyr RTOS** for multi-senso
 * **`3D_prints`**: Mechanical manufacturing models, including a structural base support for a 24-cell PV solar panel.
 
 ---
+<details>
+  <summary> Power supply layout </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-1.svg)
+</details>
+
+<details>
+  <summary> Receptor board layout </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-2.svg)
+</details>
+
+<details>
+  <summary> Connector board layout </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-3.svg)
+</details>
+
+<details>
+  <summary> Power supply routes </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-4.svg)
+</details>
+
+<details>
+  <summary> Power supply 3D board </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-5.svg)
+</details>
+
+<details>
+  <summary> Connector 3D board </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-6.svg)
+</details>
+
+<details>
+  <summary> Receptor 3D board </summary>
+  
+  ![PCB Layout Rendering](image_assets/pcb_and_schematic-page-7.svg)
+</details>
 
 ## Technical Specifications
 
